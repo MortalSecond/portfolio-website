@@ -1,0 +1,95 @@
+{
+	"sidebar":{
+		"titles":"Software Dev | Fiber Optics Tech",
+		"downloadButton":"Download Resume",
+		"cv":"/CV_Diego_Jimenez_Mendez_EN.pdf",
+		"skillsButton":"Skills",
+		"skills": [
+			{
+			  "title": "Spanish",
+			  "level": "Native",
+			  "percent": 100
+			},
+			{
+			  "title": "English",
+			  "level": "Fluent",
+			  "percent": 90
+			},
+			{
+			  "title": "C#",
+			  "level": "Very Adept",
+			  "percent": 85
+			},
+			{
+			  "title": "HTML/CSS/JS",
+			  "level": "Very Adept",
+			  "percent": 90
+			},
+			{
+			  "title": "Python",
+			  "level": "Skilled",
+			  "percent": 75
+			}
+		]
+	},
+	
+    "about":{
+        "title": "About Me",
+        "paragraph": "I’m a bilingual Spanish-English programmer with experience in C#, Python, and modern web technologies. Alongside software development, I bring hands-on expertise in fiber optics and structured cabling, bridging the gap between software and fieldwork.",
+        "skills":[
+            "Coding expertise in C#, Python, Java, and web technologies",
+            "Modern front-end work with WPF, .NET Core 9.0, and Tailwind",
+            "Fiber optics splicing, RJ45 crimping, structured networking",
+            "Fieldwork in electronic installations and automation"
+        ]
+    },
+	
+	"experience": {
+		"title": "Experience",
+		"card1": {
+			"title": "Fiber Optic Technician",
+			"location": "Offilex · Jacarandas Ave., San Marcos, Estado de México",
+			"desc": "Worked on telecommunications, security, and automation projects requiring technical precision and on-site problem solving.",
+			"bullets": [
+				"Installed and terminated fiber optic cables across residential and commercial routes.",
+				"Mounted wireless antennae and GPS units on rooftops and vehicles with proper safety gear.",
+				"Crimped and spliced UTP (RJ45) and copper cables to repair and reinforce networks."
+			]
+		},
+		"card2": {
+			"title": "Full-Stack Developer",
+			"location": "OrchestraMC · Personal Project",
+			"desc": "Built a multi-host Minecraft server utility using WPF, C#, .NET Core, and Java.",
+			"bullets": [
+				"Automated server setup with data extraction from Ngrok API, Playit.gg CLI, and Apify IPs.",
+				"Integrated multiple technologies into a single-button user interface.",
+				"Designed modular architecture for scalability and cross-host compatibility."
+			]
+	  },
+		"card3": {
+			"title": "Bachelor’s Degree",
+			"location": "Universidad Privada del Estado de México (UPEM)",
+			"desc": "Graduated in Computational Systems Engineering with top honors. Awarded official recognition and plaque for academic excellence.",
+			"bullets": [
+				"Recognized for academic excellence with official plaque and university-wide honors."
+			]
+	  }
+	},
+	
+	"projects":{
+		"project1":{
+			"title":"OrchestraMC",
+			"desc":"C# WPF tool to automate Minecraft modded server setup",
+			"link":"https://github.com/MortalSecond/OrchestraMC"
+		}
+	},
+	
+	"contact":{
+		"title": "Get In Touch",
+		"button": "Contact Me"
+	},
+	
+	"buttons":{
+		"viewGithub":"View on GitHub →"
+	}
+}

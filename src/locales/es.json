@@ -1,0 +1,95 @@
+{
+	"sidebar":{
+		"titles":"Desarrollador de Software | Tecnico en Fibra Optica",
+		"downloadButton":"Descargar CV",
+		"cv":"/CV_Diego_Jimenez_Mendez_ES.pdf",
+		"skillsButton":"Habilidades",
+		"skills": [
+			{
+			  "title": "Español",
+			  "level": "Lengua Madre",
+			  "percent": 100
+			},
+			{
+			  "title": "Inglés",
+			  "level": "Fluente",
+			  "percent": 90
+			},
+			{
+			  "title": "C#",
+			  "level": "Muy Adepto",
+			  "percent": 85
+			},
+			{
+			  "title": "HTML/CSS/JS",
+			  "level": "Muy Adepto",
+			  "percent": 90
+			},
+			{
+			  "title": "Python",
+			  "level": "Hábil",
+			  "percent": 75
+			}
+		]
+	},
+	
+    "about":{
+        "title": "Acerca de Mí",
+        "paragraph": "Soy un programador bilingüe en español e inglés con experiencia en C#, Python y tecnologías web modernas. Además del desarrollo de software, tengo experiencia práctica en fibra óptica y cableado estructurado, uniendo el campo técnico con el de desarrollo.",
+        "skills":[
+            "Experiencia en programación con C#, Python, Java y tecnologías web",
+            "Trabajo front-end moderno con WPF, .NET Core 9.0 y Tailwind",
+            "Empalme de fibra óptica, crimpado RJ45 y redes estructuradas",
+            "Instalación de equipos electrónicos y automatización en campo"
+        ]
+    },
+	
+	"experience": {
+		"title": "Experiencia",
+		"card1": {
+			"title": "Técnico en Fibra Óptica",
+			"location": "Offilex · Av. Jacarandas, San Marcos, Estado de México",
+			"desc": "Trabajé en proyectos de telecomunicaciones, seguridad y automatización que requerían precisión técnica y resolución de problemas en sitio.",
+			"bullets": [
+				"Instalación y terminación de cables de fibra óptica en rutas residenciales y comerciales.",
+				"Montaje de antenas inalámbricas y unidades GPS en azoteas y vehículos, usando equipo de seguridad.",
+				"Crimpado y empalme de cables UTP (RJ45) y de cobre para reparar y reforzar redes."
+			]
+		},
+		"card2": {
+			"title": "Desarrollador Full-Stack",
+			"location": "OrchestraMC · Proyecto Personal",
+			"desc": "Creación de una utilidad multi-host para servidores de Minecraft utilizando WPF, C#, .NET Core y Java.",
+			"bullets": [
+				"Automatización de la configuración de servidores con datos de la API de Ngrok, CLI de Playit.gg y direcciones IP de Apify.",
+				"Integración de múltiples tecnologías en una interfaz de usuario de un solo botón.",
+				"Diseño de arquitectura modular para escalabilidad y compatibilidad entre hosts."
+			]
+		},
+		"card3": {
+			"title": "Licenciatura en Ingeniería de Sistemas Computacionales",
+			"location": "Universidad Privada del Estado de México (UPEM)",
+			"desc": "Graduado en Ingeniería de Sistemas Computacionales con honores de excelencia academica.",
+			"bullets": [
+				"Reconocimiento oficial de excelencia académica con placa de honor."
+			]
+		}
+	},
+	
+	"projects":{
+		"project1":{
+			"title":"OrchestraMC",
+			"desc":"Herramienta WPF C# que automatiza el proceso de configuración y hosting de servidores Minecraft.",
+			"link":"https://github.com/MortalSecond/OrchestraMC"
+		}
+	},
+	
+	"contact":{
+		"title": "Mandame Un Mensaje",
+		"button": "Contactame"
+	},
+	
+	"buttons":{
+		"viewGithub":"Ver en GitHub →"
+	}
+}
