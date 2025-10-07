@@ -1,6 +1,6 @@
 {
 	"sidebar":{
-		"titles":"Desarrollador de Software | Tecnico en Fibra Optica",
+		"titles":"Desarrollador .NET | Full Stack | Tecnico en Fibra Optica",
 		"downloadButton":"Descargar CV",
 		"cv":"/CV_Diego_Jimenez_Mendez_ES.pdf",
 		"skillsButton":"Habilidades",
@@ -18,7 +18,7 @@
 			{
 			  "title": "C#",
 			  "level": "Muy Adepto",
-			  "percent": 85
+			  "percent": 95
 			},
 			{
 			  "title": "HTML/CSS/JS",
@@ -29,13 +29,22 @@
 			  "title": "Python",
 			  "level": "Hábil",
 			  "percent": 75
+			},
+			{
+			  "title": "Java",
+			  "level": "Hábil",
+			  "percent": 70
 			}
 		]
 	},
 	
     "about":{
         "title": "Acerca de Mí",
-        "paragraph": "Soy un programador bilingüe en español e inglés con experiencia en C#, Python y tecnologías web modernas. Además del desarrollo de software, tengo experiencia práctica en fibra óptica y cableado estructurado, uniendo el campo técnico con el de desarrollo.",
+		"paragraphs":[
+			"Ingeniero en Sistemas Computacionales, Desarrollador Full-Stack .NET bilingüe (español e inglés) egresado de la Universidad Privada del Estado de México, con experiencia en C#, WPF, .NET Core, Python y tecnologías web modernas como React, Next.js y TailwindCSS. Especializado en desarrollo de software en la plataforma de Windows. Tengo conocimientos de Java, JavaFX, y Spring Boot, si la situación lo necesita.",
+			"Mi formación incluye manejo de bases de datos en MySQL, PostgreSQL y XAMPP/PHP, y actualmente desarrollo aplicaciones de server-hosting. También he construido sitios web con HTML, CSS y JavaScript moderno.",
+			"Tengo experiencia práctica en instalaciones de internet domestico con fibra óptica y UTP, cableado estructurado y automatización. Reconocido por habilidades de resolución de problemas en campo y capacidad para diseñar soluciones tecnológicas eficientes."
+		],
         "skills":[
             "Experiencia en programación con C#, Python, Java y tecnologías web",
             "Trabajo front-end moderno con WPF, .NET Core 9.0 y Tailwind",
@@ -47,6 +56,16 @@
 	"experience": {
 		"title": "Experiencia",
 		"card1": {
+			"title": "Desarrollador .NET Full-Stack",
+			"location": "OrchestraMC · Proyecto Personal",
+			"desc": "Creación de una utilidad multi-host para servidores de Minecraft utilizando WPF, C#, .NET Core y Java.",
+			"bullets": [
+				"Desarrollo de herramienta multi-host para servidores de Minecraft utilizando WPF, C#, .NET Core 9.0 y Java. Mantengo su código en GitHub usando Git.",
+				"Automatización de configuración de servidores mediante APIs de Ngrok, CLI de Playit.gg y extracción de IPs de Apify.",
+				"Creación de arquitectura modular, usando LINQ, REST de JSON, Async/Await, y compatible con múltiples hosts y versiones."
+			]
+		},
+		"card2": {
 			"title": "Técnico en Fibra Óptica",
 			"location": "Offilex · Av. Jacarandas, San Marcos, Estado de México",
 			"desc": "Trabajé en proyectos de telecomunicaciones, seguridad y automatización que requerían precisión técnica y resolución de problemas en sitio.",
@@ -54,16 +73,6 @@
 				"Instalación y terminación de cables de fibra óptica en rutas residenciales y comerciales.",
 				"Montaje de antenas inalámbricas y unidades GPS en azoteas y vehículos, usando equipo de seguridad.",
 				"Crimpado y empalme de cables UTP (RJ45) y de cobre para reparar y reforzar redes."
-			]
-		},
-		"card2": {
-			"title": "Desarrollador Full-Stack",
-			"location": "OrchestraMC · Proyecto Personal",
-			"desc": "Creación de una utilidad multi-host para servidores de Minecraft utilizando WPF, C#, .NET Core y Java.",
-			"bullets": [
-				"Automatización de la configuración de servidores con datos de la API de Ngrok, CLI de Playit.gg y direcciones IP de Apify.",
-				"Integración de múltiples tecnologías en una interfaz de usuario de un solo botón.",
-				"Diseño de arquitectura modular para escalabilidad y compatibilidad entre hosts."
 			]
 		},
 		"card3": {
@@ -76,11 +85,42 @@
 		}
 	},
 	
-	"projects":{
-		"project1":{
-			"title":"OrchestraMC",
-			"desc":"Herramienta WPF C# que automatiza el proceso de configuración y hosting de servidores Minecraft.",
-			"link":"https://github.com/MortalSecond/OrchestraMC"
+	"projects": {
+		"project1": {
+			"sections": [
+				{
+					"image": "/orchestra_front.png",
+					"image2": "/orchestra_front2.png",
+					"header": "OrchestraMC — Orquestación Automática de Servidores de Minecraft",
+					"paragraphs": [
+						"OrchestraMC es una aplicación C# WPF que automatiza toda la cadena de despliegue de servidores de Minecraft con mods, desde la instalación de Forge hasta la provisión de túneles y la gestión en tiempo de ejecución.",
+						"Se integra con múltiples APIs de terceros (Ngrok, Playit.gg) y analiza repositorios Maven para resolver e instalar dinámicamente las versiones correctas de Forge según la versión de Minecraft seleccionada por el usuario.",
+						"La herramienta maneja operaciones de I/O de archivos en instancias de modpacks, configurando automáticamente server.properties, gestionando el ciclo de vida de procesos de Java y extrayendo direcciones de servidor de los resultados de los servicios de túnel en tiempo real."
+					]
+				},
+				{
+					"image": "/orchestra_code2.png",
+					"image2": "/orchestra_code.png",
+					"header": "Arquitectura: WPF con Integración de Servicios Asíncronos",
+					"paragraphs": [
+						"Construida sobre .NET con WPF para la interfaz de usuario, la aplicación utiliza patrones async/await para llamadas a APIs y gestión de procesos no bloqueantes, evitando que la UI se congele durante operaciones largas como la instalación de Forge.",
+						"El backend orquesta flujos de trabajo multi-pasos: valida directorios de modpacks, extrae datos de versiones de Forge desde XML de Maven, descarga y ejecuta instaladores, lanza procesos hijos para servidores y túneles, y analiza flujos stdout para obtener puntos de conexión.",
+						"Utiliza deserialización JSON para persistencia de configuración, expresiones regulares para extracción de direcciones, y máquinas de estado condicionales para determinar si instalar, iniciar, reiniciar o detener servicios según el estado actual del sistema."
+					]
+				},
+				{
+					"image": "/orchestra_git.png",
+					"image2": "/orchestra_git2.png",
+					"header": "Código Abierto con Registro de Depuración Integrado",
+					"paragraphs": [
+						"El repositorio incluye una rama de depuración dedicada con registro de salida incorporado para seguimiento de problemas y recolección de retroalimentación de usuarios.",
+						"Sigue control de versiones adecuado con releases etiquetados (v1.0.0-alpha, v1.0.1-alpha), incluye licencia MIT y mantiene separación entre builds estables y experimentales.",
+						"La base de código demuestra prácticas de producción, incluyendo manejo de errores para configuraciones de túnel modificadas, salida de depuración orientada al usuario para resolución de problemas, y separación modular de responsabilidades entre instalación, gestión de servidor y capas de red."
+					]
+				}
+			],
+			"button": "Ver en GitHub",
+			"link": "https://github.com/MortalSecond/OrchestraMC"
 		}
 	},
 	

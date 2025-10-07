@@ -1,22 +1,26 @@
-import ProjectCard from '@/components/ProjectCard'
 import en from "@/locales/en.json"
 import es from "@/locales/es.json"
+import ShowcaseProject from "@/components/ShowcaseProject"
 
-export default function ProjectsSection({language}: {language: "EN" | "ES"}){
+export default function ProjectsSection({language}: {language: "EN" | "ES"}) {
     const translations = { EN: en, ES: es }
     const t = translations[language].projects
 
-    return(
-        <section id="projects" className="mb-20">
-            <h2 className="text-3xl font-bold mb-6">Projects</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-                <ProjectCard 
-                    language={language}
-                    title={t.project1.title}
-                    desc={t.project1.desc}
-                    link={t.project1.link}
-                />
-            </div>
-        </section>
+    return (
+      <div className="relative">
+        {t.project1.sections.map((section, i) => (
+        <ShowcaseProject
+            key={i}
+            // Yeah, i know the parameters and variables' indexes are flipped,
+            // but it's on purpose. I just think the second image looks
+            // better as the primary image on this specific case.
+            image={section.image2}
+            image2={section.image}
+            title={section.header}
+            button={t.project1.button}
+            link={t.project1.link}
+            paragraphs={section.paragraphs}
+        />))}
+      </div>
     )
 }

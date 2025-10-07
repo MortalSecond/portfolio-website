@@ -1,6 +1,6 @@
 {
 	"sidebar":{
-		"titles":"Software Dev | Fiber Optics Tech",
+		"titles":".NET Dev | Full-Stack | Fiber Optics Tech",
 		"downloadButton":"Download Resume",
 		"cv":"/CV_Diego_Jimenez_Mendez_EN.pdf",
 		"skillsButton":"Skills",
@@ -18,7 +18,7 @@
 			{
 			  "title": "C#",
 			  "level": "Very Adept",
-			  "percent": 85
+			  "percent": 95
 			},
 			{
 			  "title": "HTML/CSS/JS",
@@ -29,13 +29,22 @@
 			  "title": "Python",
 			  "level": "Skilled",
 			  "percent": 75
+			},
+			{
+			  "title": "Java",
+			  "level": "Skilled",
+			  "percent": 70
 			}
 		]
 	},
 	
     "about":{
         "title": "About Me",
-        "paragraph": "I’m a bilingual Spanish-English programmer with experience in C#, Python, and modern web technologies. Alongside software development, I bring hands-on expertise in fiber optics and structured cabling, bridging the gap between software and fieldwork.",
+		"paragraphs":[
+			"Engineer in Computational Systems; Bilingual Software Developer and Fiber Optics Technician with experience in both software engineering and fieldwork. Skilled in building modern applications using C#, Python, Java, and Windows-based development with WPF, WinForms, .NET Core and .NET Framework, and current web technologies like React, Tailwind CSS, and Next.js. Specialized in software development in the Windows platform. Has fluency in Java, JavaFX, and Spring Boot, should need arise.",
+			"Formal education covered database handling with MySQL, XAMPP and PHP; mainly specialized in PostgreSQL. Currently developing applications for server-hosting. Has also built websites using HTML, CSS, and modern JavaScript.",
+			"Hands-on expertise in fiber optics installation, structured networking, and electronics automation."
+		],
         "skills":[
             "Coding expertise in C#, Python, Java, and web technologies",
             "Modern front-end work with WPF, .NET Core 9.0, and Tailwind",
@@ -47,6 +56,16 @@
 	"experience": {
 		"title": "Experience",
 		"card1": {
+			"title": "Full-Stack .NET Developer",
+			"location": "OrchestraMC · Personal Project",
+			"desc": "Built a multi-host Minecraft server utility using WPF, C#, .NET Core, and Java.",
+			"bullets": [
+				"Designed and built a multi-host server automation tool using C#, WPF, .NET Core 9.0, and Java. I currently maintain its code on GitHub using Git.",
+				"Automated server setup with data extraction from Ngrok API, Playit.gg CLI, and Apify IPs.",
+				"Developed a user-friendly interface with modular architecture, async/await asynchronous operation, LINQ, and RESTful management with JSON."
+			]
+	  	},
+		"card2": {
 			"title": "Fiber Optic Technician",
 			"location": "Offilex · Jacarandas Ave., San Marcos, Estado de México",
 			"desc": "Worked on telecommunications, security, and automation projects requiring technical precision and on-site problem solving.",
@@ -56,16 +75,6 @@
 				"Crimped and spliced UTP (RJ45) and copper cables to repair and reinforce networks."
 			]
 		},
-		"card2": {
-			"title": "Full-Stack Developer",
-			"location": "OrchestraMC · Personal Project",
-			"desc": "Built a multi-host Minecraft server utility using WPF, C#, .NET Core, and Java.",
-			"bullets": [
-				"Automated server setup with data extraction from Ngrok API, Playit.gg CLI, and Apify IPs.",
-				"Integrated multiple technologies into a single-button user interface.",
-				"Designed modular architecture for scalability and cross-host compatibility."
-			]
-	  },
 		"card3": {
 			"title": "Bachelor’s Degree",
 			"location": "Universidad Privada del Estado de México (UPEM)",
@@ -76,11 +85,42 @@
 	  }
 	},
 	
-	"projects":{
-		"project1":{
-			"title":"OrchestraMC",
-			"desc":"C# WPF tool to automate Minecraft modded server setup",
-			"link":"https://github.com/MortalSecond/OrchestraMC"
+	"projects": {
+		"project1": {
+			"sections": [
+				{
+					"image": "/orchestra_front.png",
+					"image2": "/orchestra_front2.png",
+					"header": "OrchestraMC — Automated Minecraft Server Orchestration",
+					"paragraphs": [
+						"OrchestraMC is a C# WPF application that automates the entire Minecraft modded server deployment pipeline, from Forge installation to tunnel provisioning and runtime management.",
+						"It integrates with multiple third-party APIs (Ngrok, Playit.gg) and parses Maven repositories to dynamically resolve and install correct Forge builds based on user-selected Minecraft versions.",
+						"The tool handles file I/O operations across modpack instances, automatically configuring server.properties, managing Java process lifecycle, and extracting server addresses from tunnel service outputs in real-time."
+					]
+				},
+				{
+					"image": "/orchestra_code2.png",
+					"image2": "/orchestra_code.png",
+					"header": "Architecture: WPF with Asynchronous Service Integration",
+					"paragraphs": [
+						"Built on .NET with WPF for UI, the application uses async/await patterns for non-blocking API calls and process management, preventing UI freezes during long-running operations like Forge installation.",
+						"The backend orchestrates multi-step workflows: validating modpack directories, scraping Forge version data from Maven XML, downloading and executing installers, spawning child processes for servers and tunnels, and parsing stdout streams for connection endpoints.",
+						"Uses JSON deserialization for configuration persistence, regex pattern matching for address extraction, and conditional state machines to determine whether to install, start, restart, or stop services based on current system state."
+					]
+				},
+				{
+					"image": "/orchestra_git.png",
+					"image2": "/orchestra_git2.png",
+					"header": "Open Source with Integrated Debug Logging",
+					"paragraphs": [
+						"The repository includes a dedicated debug branch with built-in output logging for issue tracking and user feedback collection.",
+						"Follows proper version control with tagged releases (v1.0.0-alpha, v1.0.1-alpha), includes MIT licensing, and maintains separation between stable and experimental builds.",
+						"The codebase demonstrates production practices including error handling for modified tunnel configurations, user-facing debug output for troubleshooting, and modular separation of concerns across installation, server management, and networking layers."
+					]
+				}
+			],
+			"button": "View on GitHub",
+			"link": "https://github.com/MortalSecond/OrchestraMC"
 		}
 	},
 	
